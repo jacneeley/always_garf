@@ -3,9 +3,9 @@ console.log("the garf is here!");
 var images = document.getElementsByTagName('img');
 
 function releaseTheGarf(){
-	for (elt of images){
-		elt.src = `${browser.runtime.getURL("legarf.jpg")}`;
-		elt.alt = 'this is the garf';
+	for (i of images){
+		i.src = `${browser.runtime.getURL("legarf.jpg")}`;
+		i.alt = 'this is the garf';
 	}
 }
 
